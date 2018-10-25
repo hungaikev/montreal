@@ -5,6 +5,12 @@
 
 ### How to Run the Application
 
+Compile the project 
+
+```
+sbt compile
+
+```
 In one Terminal
 
 ```
