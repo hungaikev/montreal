@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.lightbend.room";
+option java_outer_classname = "RoomProto";
+
+// The greeting service definition.
+service RoomService {
+    // Sends a greeting
+    rpc BookRoom (BookRoomRequest) returns (BookRoomReply) {}
+
+}
+
+// The request message containing the user's name.
+message BookRoomRequest {
+    string name = 1;
+}
+
+// The response message containing the greetings
+message BookRoomReply {
+    string message = 1;
+}
