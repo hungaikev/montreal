@@ -1,3 +1,20 @@
-The endpoint definition is part of the room.proto file. The following endpoints are implemented:
+## Sample GRPC Application
 
 **RoomService** (request-response): Client sends a booking request at which the server response with a successfull booking response
+
+
+### How to Run the Application
+
+In one Terminal
+
+```
+sbt "runMain com.lightbend.room.RoomServer"
+
+```
+
+In the second Terminal
+
+```
+sbt "runMain com.lightbend.room.RoomClient"
+
+```
